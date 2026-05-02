@@ -6,7 +6,15 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "build": "echo 'No build step required'",
+    "lint": "echo 'No linter configured'",
+    "test": "echo 'No tests configured'"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "dependencies": {
     "axios": "^1.7.2",
@@ -20,5 +28,28 @@
     "mammoth": "^1.12.0",
     "openai": "^4.68.0",
     "pdf-parse": "^1.1.1"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0"
+  },
+  "keywords": [
+    "google-drive",
+    "rag",
+    "ai",
+    "openai",
+    "express",
+    "nodejs"
+  ],
+  "author": "Dinesh Linganaboina",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dinesh0x03/DriveDocsAi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dinesh0x03/DriveDocsAi/issues"
+  },
+  "homepage": "https://drivedocai-frontend.vercel.app",
+  "private": true
 }
